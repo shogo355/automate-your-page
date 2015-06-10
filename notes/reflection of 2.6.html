@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<link rel="stylesheet" href="reflection_validated.css">
+ 		<title>Key points from lesson2.6</title>
+ 	</head>
+ 		<body>
+ 			<h1 class="top"> Key points "Telling Computers What to Do"</h1>
+ 			<div class="contents"> <!--A box for contents-->
+ 				<h2 class="lesson"><u>2.6 Structured Data: Lists & For Loops</u></h2>
+ 				<h3 class="idea">What is a list?</h3>
+ 				<p>
+ 					A list is a sequence of anything, it may involve any strings and any variables in the same list. Unlike string, it is <em>mutable</em>.
+ 				</p>
+ 				<HR align="center" width="90%">
+ 				<h3 class="idea">Mutation</h3>
+ 				<p>
+ 					 Mutation means you can change the value of the sequence. A list is a mutable sequence. Thus when a new sequnce is assigned to part of the list, it will simply change the sequence to the new one. For example:
+　　　　　　　　　<div class="eq"><!--a box for mutation-->
+                p=["H","E","L","L","O"]<br>
+                p[0]="Y"<br>
+                print p <br>
+                <span class="comment">Output: ["Y","E","L","L","O"]<br>
+                previous p[0] "H" was displaced by "Y". 
+                </div>
+           On the other hand, string is an immutable sequece. It means when a new sequence was assigned to a string, a string will create a new string with the new sequence. So the initial sequence of the string still exists but you lose the path to access that.
+ 				</p>
+ 				<HR align="center" width="90%">
+ 				<h3 class="idea">What is the difference between <em>append</em> and <em>+</em>?</h3>
+ 				<p>
+ 					The <em>append</em> mutates a list. It  adds a new element to the list. The <em>+</em> is different. It will create a new list that is the result of concatatenation, i.e. this is not a muatation.
+ 				</p>
+ 				<HR align="center" width="90%">
+  				<h3 class="idea">What is the difference between <em>for</em> loops and <em>while</em> loops</h3>
+ 				<p>
+          A <em>for</em> loop is similar to <em>while</em> loop. It iterate the given instruction until the for statement becomes <em>False</em>. Yet, a <em>for</em> loop can make codes simple. <em>while</em> loop had to define in what case it is <em>True</em>. A <em>for</em> loop will continue its loop until the entire sequence is executed. For instance, if a list is given like p=[a,b,c,d] then:
+                <div class="eq"><!--a box for for loops-->
+                p=[a,b,c,d]<br>
+                d=[e,f,g]<br>
+                For words in p:<br>
+                <span class="indent">d.append(words)</span><br>
+                print d<br>
+                <span class="comment">Output: [e,f,g,a,b,c,d]
+                </div> 
+          The loop excuted <em>d.append(words)</em> for a,b,c,then d. To explain what "words" mean, it is easy to understand if you compare the code written with <em>while</em> loop to give a same results as above:
+                <div class="eq"><!--a box for for loops-->
+                p=[a,b,c,d]<br>
+                d=[e,f,g]<br>
+                i=0<br>
+                while i&lt;len(p):<br>
+                <span class="indent">d.append(p[i])</span><br>
+                <span class="indent">i+=1</span><br>
+                print d<br>
+                <span class="comment">Output: [e,f,g,a,b,c,d]
+                </div> 
+           There is p[i] in this codes. This is similar to what "words" mean in the previous <em>for</em> loop. As explained earlier, in <em>for</em> loop, defining i is unnecessary because the <em>for</em> loop is defined to loop all the elements in the list from the front to the end.
+ 				</p>
+				
+
+ 			</div>
+
+
+
+
+ 		</body>
+
+
+ </html>

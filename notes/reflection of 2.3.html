@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<link rel="stylesheet" href="reflection_validated.css">
+ 		<title>Key points from lesson2.3</title>
+ 	</head>
+ 		<body>
+ 			<h1 class="top"> Key points "Telling Computers What to Do"</h1>
+ 			<div class="contents"> <!--A box for contents-->
+ 				<h2 class="lesson"><u>2.3 Input->Function->Output</u></h2>
+ 				<h3 class="idea">What is a function (Dave calls them “procedures")?</h3>
+ 				<p>
+ 					A function is like a penny crusher. It takes input(penny) and produce output(Souvenir Medal) as it defined(modeled). Except, a function can input many types of variables or strings (so the out put). For example, if you define a function <em>convert_hours_to_munites(hours)</em>, it will simply multiply whatever input by 60.
+ 				</p>
+ 				<HR align="center" width="90%">
+ 				<h3 class="idea">What is the difference between making and using a function?</h3>
+ 				<p>
+ 					The function can be defined(made) by using <em>def</em> like below.
+            <div class="eq"><!--a box for define function-->
+            def convert_hours_to_minutes(hours):
+            <br>
+            <span class="indent">minutes=hours*60</span><br>
+            <span class="indent">return minutes</span>
+              </div>
+          Here, convert_hours_to_minutes is the name of the function and hours between the brackets is the input. Once you declared the function name and input, there are the lines what function does to the input and what to output(by using return).
+          <br><br>
+          To use a function, write the name of the function and actual value of input between the brackets. The value can be anything like variable or string (as far as the function can manage). <br>
+          A function can be included in a variable or you could just print it like follows:
+            <div class="eq"><!--a box for define function-->
+            my_variable=convert_hours_to_minutes(5)
+            <br>
+            print convert_hours_to_minutes(5)
+              </div>
+ 				</p>
+ 				<HR align="center" width="90%">
+ 				<h3 class="idea">How do functions help programmers avoid repetition?</h3>
+ 				<p>
+ 					A function can be used unlimited times once you defined it. Therefore you do not need to write same codes again.
+ 				</p>
+ 				<HR align="center" width="90%">
+  				<h3 class="idea">What happens if a function doesn't have a return statement?</h3>
+ 				<p>
+ 					<em>return</em> in Python means what to output. Whatever the function does, without output the answer of the function will be <em>None</em>.
+
+ 				</p>
+ 			</div>
+
+
+
+
+ 		</body>
+
+
+ </html>
